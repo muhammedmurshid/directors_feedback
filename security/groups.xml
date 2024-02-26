@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="0">
+        <record model="ir.module.category" id="module_logic_directors_feedbacks_groups">
+            <field name="name">Directors Feedback</field>
+            <field name="sequence">20</field>
+            <field name="visible" eval="0"/>
+        </record>
+        <record id="director_logic_directors_feedback" model="res.groups">
+            <field name="name">Directors</field>
+            <field name="category_id" ref="module_logic_directors_feedbacks_groups"/>
+        </record>
+        <record id="admin_logic_directors_feedback" model="res.groups">
+            <field name="name">Admin</field>
+            <field name="category_id" ref="module_logic_directors_feedbacks_groups"/>
+        </record>
+    </data>
+</odoo>
