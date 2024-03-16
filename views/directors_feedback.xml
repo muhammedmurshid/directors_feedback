@@ -6,6 +6,15 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form string="Types">
+                <header>
+                    <field name="state" widget="statusbar"/>
+                    <button name="action_sent_activity" string="Done" class="oe_highlight" type="object"
+                            help="Send to Activity" groups="directors_feedback.director_logic_directors_feedback"
+                            states="draft"/>
+                    <button name="action_remove_activity" string="Done" class="oe_highlight" type="object"                             groups="directors_feedback.base_users_directors_feedback"
+                            attrs="{'invisible': ['|',('state', 'in', ['draft']),('removed_activity', '=', True)]}"/>
+                </header>
+
                 <style>
                     .oe_kanban_image {
                     width: 80px;
@@ -19,6 +28,7 @@
                             <field name="feedback"/>
                             <field name="date"/>
                             <field name="rating" widget="priority"/>
+                            <field name="removed_activity" invisible="1"/>
 
 
                         </group>

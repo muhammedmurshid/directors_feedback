@@ -14,5 +14,9 @@
             <field name="name">Admin</field>
             <field name="category_id" ref="module_logic_directors_feedbacks_groups"/>
         </record>
+        <record id="base_users_directors_feedback" model="res.groups">
+            <field name="name">Base Users</field>
+            <field name="category_id" ref="module_logic_directors_feedbacks_groups"/>
+        </record>
     </data>
 </odoo>

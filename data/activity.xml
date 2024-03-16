@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="mail_activity_for_directors_feedback" model="mail.activity.type">
+            <field name="name">Directors Feedback</field>
+            <field name="res_model_id" ref="directors_feedback.model_directors_feedback"/>
+
+        </record>
+    </data>
+</odoo>

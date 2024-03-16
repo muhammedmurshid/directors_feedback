@@ -6,7 +6,9 @@
     'data': [
         'security/groups.xml',
         'security/ir.model.access.csv',
-        'views/directors_feedback.xml'
+        'views/directors_feedback.xml',
+        'security/rules.xml',
+        'data/activity.xml'
     ],
     'demo': [],
     'summary': "directors_feedback_logic",

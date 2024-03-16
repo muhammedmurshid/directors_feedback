@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.rule" id="logic_directors_feedback_all_employees_rule">
+            <field name="name">All Employee Rules</field>
+            <field name="model_id" ref="model_directors_feedback"/>
+            <field name="domain_force">[('employee_id.user_id.id', '=', user.id)]
+            </field>
+            <field name="groups" eval="[(4, ref('directors_feedback.base_users_directors_feedback'))]"/>
+        </record>
+    </data>
+</odoo>

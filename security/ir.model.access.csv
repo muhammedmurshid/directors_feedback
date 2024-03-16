@@ -1,3 +1,4 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 "access_directors_feedback","access_directors_feedback","model_directors_feedback","director_logic_directors_feedback",1,1,1,1
 "access_directors_feedback_heads","access_directors_feedback","model_directors_feedback","admin_logic_directors_feedback",1,0,0,1
+"access_directors_feedback_all_employees","access_directors_feedback","model_directors_feedback","base_users_directors_feedback",1,0,0,0
